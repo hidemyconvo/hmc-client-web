@@ -1,0 +1,39 @@
+{
+  "name": "hidemyconvo-client-web",
+  "version": "0.0.1",
+  "description": "This project is web-client for HideMyConvo",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "dependencies": {},
+  "napa": {
+    "angular": "angular/bower-angular"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-uglify": "^0.2.1",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-autoprefixer": "0.0.6",
+    "gulp-browserify": "^0.5.0",
+    "napa": "^0.4.0",
+    "gulp-util": "^2.2.14",
+    "gulp-concat": "^2.1.7",
+    "gulp-plumber": "^0.5.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "napa"
+  },
+  "repository": "git@github.com:hidemyconvo/hmc-client-web.git",
+  "keywords": [
+    "IM",
+    "secure",
+    "conversation",
+    "realtime",
+    "client",
+    "web"
+  ],
+  "author": "HideMyConvo",
+  "license": "BSD"
+}

@@ -1,0 +1,18 @@
+server {
+    listen 80; # NOTE: specify external IP like "listen x.x.x.x:80"
+    server_name hmc; # change it
+
+    root /PATH/TO/HMC-CLIENT-WEB/public;
+
+    location / {
+        try_files $uri /index.html;
+    }
+
+    location ~* \.(?:css|js)$ {
+        expires -1; # useful for development
+        access_log off;
+        add_header Cache-Control "public";
+    }
+
+    charset utf-8;
+}
